@@ -19,5 +19,6 @@ export interface File {
   destination: string;
   format?: string;
   filter?: string | Partial<TransformedToken> | ((token: TransformedToken) => boolean);
+  packageName?: string;
   options?: Options;
 }
